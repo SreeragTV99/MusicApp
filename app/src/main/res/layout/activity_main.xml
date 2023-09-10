@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/acesse_sua_"
+            android:layout_width="328dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/roboto_bold"
+            android:lineHeight="@dimen/line_height_14sp"
+            android:text="@string/acesse_sua_"
+            android:textColor="@color/text_color_0c110f"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:background="@drawable/rounded_rectangle"
+            android:backgroundTint="@color/field_background"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/e_mail_input"
+            android:paddingStart="@dimen/spacing_8dp"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acesse_sua_" />
+
+        <EditText
+            android:id="@+id/senhaInput"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:background="@drawable/rounded_rectangle"
+            android:backgroundTint="@color/field_background"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/senha_input"
+            android:paddingStart="@dimen/spacing_8dp"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="328dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="right"
+            android:text="@string/esqueci_minha_senha_text"
+            android:textColor="@color/text_color_017947"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/senhaInput" />
+
+
+        <Button
+            android:id="@+id/acessarButton"
+            android:layout_width="328dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/acessar_button_background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Acessar"
+            android:textColor="@color/button_text_color_002d1a"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/secondbutton"
+            android:layout_width="328dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/n_o_tem_uma_conta_crie_agora_button_text"
+            android:textColor="@color/button_text_color_002d1a"
+            app:cornerRadius="@dimen/spacing_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acessarButton"
+            app:strokeColor="@color/acessar_button_background"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="ou"
+            app:layout_constraintBottom_toTopOf="@id/googleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondbutton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleButton"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="328dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/button_backround_tint_dceae4"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Acesse com o Gmail"
+            android:textColor="@color/button_text_color_0c110f"
+            app:cornerRadius="@dimen/spacing_8dp"
+            app:icon="@drawable/img_2"
+            app:iconTint="@null"
+            app:layout_constraintBottom_toTopOf="@+id/appleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/appleButton"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="328dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/button_backround_tint_dceae4"
+            android:fontFamily="@font/roboto_bold"
+            android:stateListAnimator="@null"
+            android:text="Acesse com o Apple ID"
+            android:textColor="@color/button_text_color_0c110f"
+            app:cornerRadius="@dimen/spacing_8dp"
+            app:icon="@drawable/img_3"
+            app:iconTintMode="multiply"
+            app:layout_constraintBottom_toTopOf="@+id/facebookButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/facebookButton"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="328dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="@dimen/spacing_8dp"
+            android:backgroundTint="@color/button_backround_tint_dceae4"
+            android:fontFamily="@font/roboto_bold"
+            android:stateListAnimator="@null"
+            android:text="Acesse com o Facebook"
+            android:textColor="@color/button_text_color_0c110f"
+            app:cornerRadius="@dimen/spacing_8dp"
+            app:icon="@drawable/img_1"
+            app:iconTintMode="multiply"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

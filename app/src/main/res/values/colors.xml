@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#56ffa8</color>
+    <color name="my_dark_primary">#0EC679</color>
+    <color name="my_light_primary">#02ED8A</color>
+    <color name="field_background">#FCFCFC</color>
+    <color name="acessar_button_background">#02ED8A</color>
+    <color name="dark_field_background">#0C110F</color>
+    <color name="text_color_0c110f">#0C110F</color>
+    <color name="text_color_017947">#017947</color>
+    <color name="button_text_color_002d1a">#002D1A</color>
+    <color name="button_backround_tint_dceae4">#DCEAE4</color>
+    <color name="button_text_color_0c110f">#0C110F</color>
+    <color name="text_color_fcfcfc">#FCFCFC</color>
+    <color name="button_background_tint_0c110f">#0C110F</color>
+    <color name="button_background_tint_dceae4">#DCEAE4</color>
+
+</resources>

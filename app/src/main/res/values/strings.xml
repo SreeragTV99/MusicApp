@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="acesse_sua_">Accesse sua conta</string>
+    <string name="senha_input">Senha</string>
+    <string name="e_mail_input">E-mail</string>
+    <string name="esqueci_minha_senha_text"><u>Esqueci minha senha</u></string>
+    <string name="n_o_tem_uma_conta_crie_agora_button_text">Não tem uma conta? Crie agora</string>
+
+</resources>
